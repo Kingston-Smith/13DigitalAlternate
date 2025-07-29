@@ -1,0 +1,33 @@
+<!--Making it extend the template-->
+{% extends "template.html" %} {% block title %} Forum {% endblock %}
+{% block content %}
+<br/>
+<div align="center">
+    <h3>Make a post</h3>
+</div>
+<br/>
+
+<!--Form for making a post-->
+<form method="POST">
+    <!--Title form-->
+    <div align="center">
+        <label for="title">Post title</label>
+        <br/><br/>
+        <input type="text" name="title" id="title" class="form-control" placeholder="Post title" />
+        <br/><br/>
+        <!--Text area-->
+        <label for="content">Post content</label>
+        <br/><br/>
+        <textarea name="content" id="content" class="form-control"></textarea>
+        <br/>
+    </div>
+    <!--Submit button-->
+    <div align="center">
+        <button class="btn btn-primary" type="submit">
+            Create post
+        </button>
+    </div>
+</form>
+
+
+{% endblock %}
