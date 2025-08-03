@@ -15,8 +15,6 @@ from .models import User, Post, Comment, Like
 # Setting auth blueprint
 auth = Blueprint("auth", __name__)
 
-# importing time
-
 # routes
 
 # sign up
